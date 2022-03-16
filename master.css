@@ -11,7 +11,15 @@ body {
 #divPortada {
     background-color: #212121;
     color:whitesmoke; 
-    height: 100vh;    
+    height: 100vh;  
+    min-height: 100vh;
+    min-height: -webkit-fill-available;  
+}
+
+@media screen and (max-width: 420px) {
+    #divPortada {
+        height: 100%;         
+    }
 }
 
 /* Estilos NAVBAR*/
@@ -227,6 +235,7 @@ body {
 .illustracion{
     height: 250px;
     text-align: center;
+    
 }
 
 @media screen and (max-width: 1546px) {
